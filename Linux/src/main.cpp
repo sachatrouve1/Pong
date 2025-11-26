@@ -675,7 +675,7 @@ int main(int argc, char const *argv[])
             window.draw(textPif);
             window.draw(textPaf);
             window.display();
-            sleep(3000);
+            sleep(3);
             startSound.play();
         }
         else
@@ -725,7 +725,7 @@ void newRound(sf::CircleShape& ball, sf::Vector2f& ballSpeed, sf::Vector2f& ball
     player1.setPosition(player1Position);
     player2.setPosition(player2Position);
     
-    sleep(500);
+    usleep(500000);
 }
 
 void newGame(sf::CircleShape& ball, sf::Vector2f& ballSpeed, sf::Vector2f& ballPosition, sf::RectangleShape& player1, sf::Vector2f& player1Position, sf::RectangleShape& player2, sf::Vector2f& player2Position, int winner, int& score1, sf::Text& textScore1, int& score2, sf::Text& textScore2)
